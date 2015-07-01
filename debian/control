@@ -1,0 +1,23 @@
+Source: skype4py
+Section: contrib/python
+Priority: extra
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>= 7),
+               cdbs (>= 0.4.43),
+               python-all (>= 2.4),
+               python-support (>= 0.7.1),
+               python-setuptools (>= 0.6b3)
+Standards-Version: 3.9.1
+XS-Python-Version: >= 2.4
+Homepage: https://developer.skype.com/wiki/Skype4Py
+Vcs-Svn: svn://svn.debian.org/python-modules/packages/skype4py/trunk/
+Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/skype4py
+
+Package: python-skype
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}
+Description: Skype API wrapper for Python
+ Skype4Py is a high-level, platform independent Skype API wrapper for
+ Python with API similar to Skype4COM.  This package allows the
+ development of applications written in Python that can interface with
+ the popular voice-over-IP Skype program.

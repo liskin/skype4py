@@ -1,0 +1,27 @@
+Description: os.execlp takes at least two arguments.
+  When called with just one arg, it would crash or raise an exception.
+Author: Jakub Wilk <jwilk@debian.org>
+Bug-Debian: http://bugs.debian.org/578327
+
+--- a/Skype4Py/api/posix_dbus.py
++++ b/Skype4Py/api/posix_dbus.py
+@@ -176,7 +176,7 @@
+             import os
+             if os.fork() == 0: # we're child
+                 os.setsid()
+-                os.execlp('skype')
++                os.execlp('skype', 'skype')
+ 
+     def shutdown(self):
+         import os
+--- a/Skype4Py/api/posix_x11.py
++++ b/Skype4Py/api/posix_x11.py
+@@ -400,7 +400,7 @@
+         if not self.is_running():
+             if os.fork() == 0: # we're the child
+                 os.setsid()
+-                os.execlp('skype')
++                os.execlp('skype', 'skype')
+ 
+     def shutdown(self):
+         from signal import SIGINT

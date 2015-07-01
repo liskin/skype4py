@@ -1,0 +1,48 @@
+skype4py (1.0.32.0-1) unstable; urgency=low
+
+  * New upstream release.
+  * Removed disable-cython.diff since upstream removed Cython from setup.py.
+  * Refreshed execlp.diff patch.
+
+ -- أحمد المحمودي (Ahmed El-Mahmoudy) <aelmahmoudy@sabily.org>  Thu, 16 Dec 2010 20:49:44 +0200
+
+skype4py (1.0.31.0-2) unstable; urgency=low
+
+  * QA upload.
+  * Set maintainer to the Debian QA Group 
+  * Remove Rafael Laboissiere from Uploaders (closes: #571877).
+  * Switch to source format 3.0 (quilt).
+  * Automatically generate dependencies on python and python-support
+    (closes: #592490)
+  * Fix crash when trying to run skype (closes: #578327).
+  * Disable Cython support for the time being (closes: #592728).
+  * Build-depend on python-all rather than python-all-dev.
+  * Bump standards version to 3.9.1 (no changes needed).
+
+ -- Jakub Wilk <jwilk@debian.org>  Thu, 12 Aug 2010 18:59:38 +0200
+
+skype4py (1.0.31.0-1) unstable; urgency=low
+
+  * New upstream release.  First official release of the package
+    (closes: #515783).
+  * debian/control:
+    + Set Maintainer as the Debian Python Modules Team and add myself to the
+      Uploaders list
+    + Put package in the contrib distribution
+    + Add appropriate Vcs-* URLs
+    + Fix Lintian warning debhelper-but-no-misc-depends
+    + Add an extra sentence to the extended description (Lintian warning
+      extended-description-is-probably-too-short)
+  * debian/watch: Use SF redirector (Lintian warning)
+  * debian/copyright:
+    + Use the UTF-8 character for the Copyright symbol (Lintian warning)
+    + Update the licensing terms of the Debian packaging to GPL v3
+
+ -- Rafael Laboissiere <rafael@debian.org>  Wed, 18 Feb 2009 18:00:58 +0100
+
+skype4py (1.0.29.0-1) unstable; urgency=low
+
+  * Initial release
+
+ -- Rafael Laboissiere <rafael@debian.org>  Tue, 28 Oct 2008 11:46:13 +0100
+
