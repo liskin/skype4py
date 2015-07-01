@@ -1,3 +1,9 @@
+skype4py (1.0.35.991-0.1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Tomas Janousek <tomi@nomi.cz>  Wed, 01 Jul 2015 18:32:36 +0200
+
 skype4py (1.0.32.0-1) unstable; urgency=low
 
   * New upstream release.
